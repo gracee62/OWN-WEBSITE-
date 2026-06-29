@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aayus Luitel | Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#ffffff;
+    color:#1e293b;
+
+}
+
+
+/* NAVBAR */
+
+nav{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+    color:#0288d1;
+
+}
+
+
+.logo span{
+
+    color:#0f172a;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    margin-left:25px;
+    color:#334155;
+    font-weight:500;
+
+}
+
+
+nav a:hover{
+
+    color:#0288d1;
+
+}
+
+
+
+
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#ffffff,#e0f7ff,#4fc3f7);
+
+    display:flex;
+    align-items:center;
+    padding:100px 10% 50px;
+
+}
+
+
+.hero-content{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    gap:50px;
+
+}
+
+
+
+.text{
+
+    flex:1;
+
+}
+
+
+
+.text h4{
+
+    color:#0288d1;
+    font-size:22px;
+
+}
+
+
+.text h1{
+
+    font-size:65px;
+    color:#0f172a;
+
+}
+
+
+.text h1 span{
+
+    color:#0288d1;
+
+}
+
+
+.text h2{
+
+    color:#334155;
+    margin:15px 0;
+
+}
+
+
+.text p{
+
+    font-size:18px;
+    line-height:1.8;
+    color:#475569;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+
+    background:#0288d1;
+    color:white;
+
+    border-radius:50px;
+
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#0369a1;
+    transform:translateY(-5px);
+
+}
+
+
+
+
+/* IMAGE */
+
+
+.profile{
+
+    position:relative;
+
+}
+
+
+.profile img{
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:10px solid white;
+
+    box-shadow:
+    0 0 40px rgba(2,136,209,.4);
+
+}
+
+
+
+.badge{
+
+    position:absolute;
+
+    bottom:20px;
+    right:20px;
+
+    background:#0288d1;
+    color:white;
+
+    padding:15px;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+    padding:80px 10%;
+
+}
+
+
+.title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#0288d1;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ABOUT */
+
+
+.about{
+
+    background:#f0faff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    line-height:1.9;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+
+/* CARDS */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    border-top:5px solid #4fc3f7;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#0288d1;
+
+    color:white;
+
+}
+
+
+
+.card i{
+
+    font-size:45px;
+
+    color:#0288d1;
+
+    margin-bottom:15px;
+
+}
+
+
+.card:hover i{
+
+    color:white;
+
+}
+
+
+
+
+/* PROJECTS */
+
+
+.project{
+
+    background:#e0f7ff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+    text-align:center;
+
+    background:#0288d1;
+
+    color:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+}
+
+
+
+.contact a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.hero-content{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+
+.text h1{
+
+    font-size:45px;
+
+}
+
+
+.profile img{
+
+    width:250px;
+    height:250px;
+
+}
+
+
+nav{
+
+    padding:20px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<nav>
+
+<div class="logo">
+Aayus<span>.</span>
+</div>
+
+
+<div>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+</nav>
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+
+<div class="text">
+
+
+<h4>Hello, I'm</h4>
+
+
+<h1>
+Aayus <span>Luitel</span>
+</h1>
+
+
+<h2>
+Aspiring Web Developer
+</h2>
+
+
+<p>
+
+Hi, I'm Aayus Luitel, a 17-year-old aspiring web developer from Nepal.
+
+I'm a Class 11 student at Kakarvitta Secondary School, studying Commerce
+with Computer Science.
+
+I enjoy building responsive websites using HTML, CSS, and JavaScript,
+and I'm continuously improving my skills to become a full-stack web developer.
+
+</p>
+
+
+<a href="#projects" class="btn">
+View My Work
+</a>
+
+
+</div>
+
+
+
+<div class="profile">
+
+
+<img src="IMG_20260421_154003_619.jpg" alt="Aayus Luitel">
+
+
+<div class="badge">
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="about">
+
+
+<h2 class="title">
+About Me
+</h2>
+
+
+<div class="about">
+
+
+I am passionate about web development and technology.
+
+I love creating clean, responsive, and user-friendly websites.
+
+My goal is to become a professional full-stack developer and build
+real-world applications that solve problems.
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="skills">
+
+
+<h2 class="title">
+My Skills
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<i class="fab fa-html5"></i>
+
+<h3>HTML5</h3>
+
+</div>
+
+
+<div class="card">
+
+<i class="fab fa-css3-alt"></i>
+
+<h3>CSS3</h3>
+
+</div>
+
+
+<div class="card">
+
+<i class="fab fa-js"></i>
+
+<h3>JavaScript</h3>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Frontend Development</h3>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="projects">
+
+
+<h2 class="title">
+My Projects
+</h2>
+
+
+<div class="cards">
+
+
+<div class="project">
+
+<h3>40+ HTML Projects</h3>
+
+<p>
+Created different website structures and layouts.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>Responsive Websites</h3>
+
+<p>
+Designed websites that work on mobile and desktop.
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>JavaScript Learning Projects</h3>
+
+<p>
+Building interactive web applications.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="contact">
+
+
+<div class="contact">
+
+
+<h2>
+Let's Build Something Together
+</h2>
+
+
+<p>
+Interested in my work? Contact me for web projects.
+</p>
+
+
+<br>
+
+
+<a href="mailto:urgenurgen408@gmail.com">
+urgenurgen408@gmail.com
+
+</a>
+
+
+</div>
+
+
+</section>
+
+<footer>
+
+© 2026 Aayus Luitel | Web Developer From Nepal
+
+</footer>
+
+
+
+</body>
+
+</html>
